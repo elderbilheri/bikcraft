@@ -1,0 +1,197 @@
+.seg-bg {
+  background-color: #131313;
+  color: white;
+  padding-bottom: 60px;
+}
+
+.seg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.seg-titulo {
+  grid-column: 1 / -1;
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.seg-mod-A,
+.seg-mod-B {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 4px;
+  align-content: start;
+}
+
+.seg-mod-B {
+  grid-column: 2;
+}
+
+.seg-nome {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 29px;
+  padding-bottom: 20px;
+}
+
+.seg-mod-A h2 {
+  color: #a3a3a3;
+}
+
+.seg-mod-B h2 {
+  color: #ffbb00;
+}
+
+.seg-list li {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.seg-list img {
+  width: 15px;
+  height: 11px;
+}
+
+.seg-vantagens {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #fff;
+}
+
+.seg-button {
+  display: block;
+  grid-column: 1;
+  justify-self: start;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-left: 29px;
+}
+
+.seg-mod-A a {
+  color: #ccc;
+  background-color: #2e2e2e;
+}
+
+.seg-mod-B a {
+  color: #332200;
+  background: linear-gradient(#ffbf00, #f2a50c);
+}
+
+.seg-button:hover {
+  background: #cc7000;
+  color: #f8f8f8;
+}
+
+.seg-preco {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  padding-right: 10px;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.seg-preco::after {
+  content: "mensal";
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  color: #9c9c9c;
+  top: 38px;
+  left: 75px;
+  position: absolute;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .seg-bg {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .seg-container {
+    padding: 20px;
+  }
+  .seg-titulo {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  .seg-nome {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .seg-vantagens {
+    font-size: 0.8rem;
+  }
+  .seg-button {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+  .seg-preco::after {
+    display: none;
+  }
+  .seg-preco {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 820px) {
+  .seg-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    justify-items: center;
+  }
+  .seg-mod-B {
+    grid-column: 1;
+  }
+  .seg-preco::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .seg-container {
+    padding: 10px;
+  }
+  .seg-mod-A,
+  .seg-mod-B {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .seg-titulo {
+    font-size: 2rem;
+    justify-self: center;
+  }
+  .seg-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 3;
+    justify-self: center;
+    margin: 0px;
+    margin-top: 20px;
+  }
+}

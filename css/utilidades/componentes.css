@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #332200;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: #cc7000;
+  color: #f8f8f8;
+}
+
+.pagina-bgblack {
+  background-color: #131313;
+  padding: 50px 0px;
+}
+
+.pagina-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.pagina-nome {
+  color: #b2b2b2;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.pagina-titulo {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 600;
+}

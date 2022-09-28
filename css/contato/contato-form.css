@@ -1,0 +1,95 @@
+.contato-form {
+  display: grid;
+  background-color: #fff;
+  gap: 10px 20px;
+  padding: 40px;
+  border-radius: 0 4px 4px 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-col {
+  grid-column: span 2;
+}
+
+.contato-form label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #131313;
+  margin-bottom: 5px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #717171;
+  background-color: #f7f7f7;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contato-form textarea {
+  resize: vertical;
+  max-height: 200px;
+}
+
+.contato-form input:hover,
+.contato-form textarea:hover {
+  border: 1px solid #ffbf00;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border: 1px solid #b16400;
+  background: #fff;
+  box-shadow: 0 0 0 2px #fea;
+}
+
+#button-form {
+  display: block;
+  grid-column: span 2;
+  text-align: center;
+  justify-self: start;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.contato-form button {
+  border-style: none;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .contato-form {
+    padding: 20px;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .contato-form input,
+  .contato-form textarea {
+    margin-bottom: 5px;
+  }
+  #telefone,
+  #text {
+    grid-column: span 2;
+  }
+  #button-form {
+    margin-top: 0px;
+    justify-self: center;
+  }
+}

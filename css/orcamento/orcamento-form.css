@@ -1,0 +1,131 @@
+.orcamento-form {
+  display: grid;
+  background-color: #fff;
+  gap: 10px 20px;
+  padding: 40px;
+  border-radius: 0 4px 4px 0;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario h3 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #505050;
+  grid-column: span 2;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.formulario h3::before {
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 18px;
+  background-color: #ffbb00;
+  top: 0px;
+  left: -12px;
+  position: absolute;
+}
+
+.orcamento-form label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #131313;
+  margin-bottom: 5px;
+}
+
+.orcamento-form input,
+.form-select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #717171;
+  background-color: #f7f7f7;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-select {
+  display: block;
+  outline: none;
+}
+
+option {
+  color: #717171;
+  font-weight: 600;
+}
+
+#condicoes {
+  text-decoration: underline;
+  color: #be7f00;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 10px;
+}
+
+.checkbox input {
+  width: 20px;
+  height: 18px;
+  margin: 0px;
+}
+
+.orcamento-form input:hover,
+.orcamento-form select:hover {
+  border: 1px solid #ffbf00;
+}
+
+.orcamento-form input:focus,
+.orcamento-form select:focus {
+  outline: none;
+  border: 1px solid #b16400;
+  background: #fff;
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.orcamento-form button {
+  border-style: none;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .orcamento-form {
+    padding: 20px;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .orcamento-form input,
+  .orcamento-form textarea {
+    margin-bottom: 5px;
+  }
+  .respo-colum {
+    grid-column: span 2;
+  }
+
+  .checkbox {
+    grid-column: 1 / -1;
+  }
+
+  #button-form {
+    margin-top: 0px;
+    justify-self: center;
+  }
+}
