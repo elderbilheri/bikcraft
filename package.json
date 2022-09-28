@@ -1,0 +1,19 @@
+{
+  "name": "bikcraft",
+  "version": "1.0.0",
+  "description": "Site bickfrat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elderbilheri/bikcraft.git"
+  },
+  "author": "Elder Bilheri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elderbilheri/bikcraft/issues"
+  },
+  "homepage": "https://github.com/elderbilheri/bikcraft#readme"
+}
